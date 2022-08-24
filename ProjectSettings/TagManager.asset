@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1192040805
+    locked: 0
+  - name: Obstacle
+    uniqueID: 703426135
+    locked: 0
+  - name: Foreground
+    uniqueID: 2662443163
+    locked: 0
+  - name: Bird
+    uniqueID: 363180303
+    locked: 0
+  - name: UI
+    uniqueID: 3448999533
+    locked: 0
