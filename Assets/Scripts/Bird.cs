@@ -27,12 +27,14 @@ public class Bird : MonoBehaviour
     Animator anim;
 
     public GameObject readyText;
+    public GameObject gameoverText;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.simulated = false;
         anim = GetComponent<Animator>();
+        gameoverText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -123,5 +125,7 @@ public class Bird : MonoBehaviour
         // 애니메이션도 Die 로 전환
         anim.SetTrigger("Die");
         rb.velocity = dieSpeed;
+
+        gameoverText.SetActive(true);
     }
 }
